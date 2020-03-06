@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function hien_thi(){
+            alert('hello các bạn');
+        }
+        function hien_thi2(){
+            document.getElementById('hienthi2').innerHTML='đây là javascript';
+        }
+        function hien_thi3() {
+            document.write('document.write');
+        }
+        function hien_thi4(){
+         console.log('Tung Dep Trai');
+        }
+    </script>
+</head>
+<body>
+<h1>Hiển thị kết quả sử dụng hàm alert():</h1>
+<button id="hienthi" onclick="hien_thi()">Click</button>
+<h1 id="hienthi2"> Hiển thị kết quả sử dụng thẻ HTML:</h1>
+<button onclick="hien_thi2()">Click</button>
+<h1>Hiển thị kết quả sử dụng hàm document.write():</h1>
+<button onclick="hien_thi3()">Click</button>
+<h1>Hiển thị kết quả sử dụng hàm console.log():</h1>
+<button onclick="hien_thi4()">Click</button>
+</body>
+</html>
