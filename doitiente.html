@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <script language="JavaScript">
+        function quy_doi(so, tt) {
+            console.log(so, tt)
+            let kq =0
+            if (tt === 'usd'){
+                kq = so / 23200
+            }
+           else if (tt === "euro"){
+                kq = so / 25994
+            }
+           return kq
+        }
+    </script>
+</head>
+<body>
+<form id="nhap">
+    <table width="50%">
+        <tr>
+            <td>Amount</td>
+            <td>From Creesncy</td>
+            <td>To Crrency</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nhap" id="so"/></td>
+            <td>
+                <select>
+                    <option>Việt nam</option>
+                    <option>Lào</option>
+                    <option>Campuchia</option>
+                </select>
+            </td>
+            <td>
+                <select name="chon" id="tt">
+                    <option value="usd">USD</option>
+                    <option value="euro">EURO</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" style="background: blueviolet"
+                        onclick="xuat.innerHTML=quy_doi(so.value, tt.value)">Convert
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td style="color: blue">Reslt:</td>
+            <td>
+                <div id="xuat"></div>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
