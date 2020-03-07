@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<h1>Bài 1: Tính Điểm Trung Bình</h1>
+<script>
+    let a = ""
+    let b = ""
+    let c = ""
+    a = prompt('Điểm vật lý')
+    b = prompt('Điểm hóa học')
+    c = prompt('Điểm sinh học')
+    let vatly = parseInt(a)
+    let hoahoc = parseInt(b)
+    let sinhhoc = parseInt(c)
+    let area = (vatly + hoahoc + sinhhoc) / 3
+    document.write('Điểm vật lý ' + a)
+    document.write('<br/>')
+    document.write('Điểm hóa học ' + b)
+    document.write('<br/>')
+    document.write('Điểm sinh học ' + c)
+    document.write('<br/>')
+    document.write('Điểm trung bình: ' + area)
+    document.write('<br/>')
+</script>
+<h1>Bài 2:Tính Độ F</h1>
+<script>
+    C = prompt('Nhập vào số độ')
+    let nhietdo = parseInt(C)
+    let F = (9*C) / 5 + 32
+    document.write('Nhiệt độ C =' + C)
+    document.write('<br/>')
+    document.write('Nhiệt độ F =' + F)
+    document.write('<br/>')
+</script>
+<h1>Bài 3: Tính diện tích và chu vi hình tròn</h1>
+<script>
+    r = prompt('Nhập đường kính của hình Tròn')
+    let bankinh = parseInt(r)
+    let S = (r*r)*3.14
+    let P = (r*2)*3.14
+    document.write('Bán kính đường tròn =' + r)
+    document.write('<br/>')
+    document.write('Diện tich hình tron là:' + S)
+    document.write('<br/>')
+    document.write('Chu vi hình tròn =' + P)
+</script>
+</body>
+</html>
